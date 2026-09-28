@@ -1,0 +1,71 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the manuscript below."
+type: software
+title: "circular_ST: Circular Data Analysis for Spatial Omics"
+abstract: >-
+  R code for circular data analysis in spatial omics, reproducing the case
+  studies of derived circadian peak phase in a mouse model of Alzheimer's
+  disease and latent cell-cycle position in human ovarian cancer.
+version: 1.0.0
+date-released: 2026-09-28
+license: MIT
+repository-code: "https://github.com/c16267/circular_ST"
+keywords:
+  - circular data analysis
+  - spatial transcriptomics
+  - directional statistics
+  - circadian phase
+  - cell-cycle position
+  - R
+authors: &authors
+  - family-names: Shin
+    given-names: Jungmin
+    affiliation: The Ohio State University
+  - family-names: Yoo
+    given-names: Jinkyung
+    affiliation: University of Houston
+  - family-names: Cho
+    given-names: Yanghyeon
+    affiliation: University of Idaho
+  - family-names: Gupta
+    given-names: Arkobrato
+    affiliation: The Ohio State University
+  - family-names: Mao
+    given-names: Pin Hsun
+    affiliation: The Ohio State University
+  - family-names: Thakkar
+    given-names: Kairavee
+    affiliation: The Ohio State University
+  - family-names: Eddy
+    given-names: Tharun Amir
+    affiliation: Intel Corporation
+  - family-names: Jung
+    given-names: Kyeong Joo
+    affiliation: Stanford University
+  - family-names: Kim
+    given-names: Jee Yeon
+    affiliation: The Ohio State University
+  - family-names: Jeon
+    given-names: Hyeongseon
+    affiliation: University of Houston
+  - family-names: Xie
+    given-names: Juan
+    affiliation: University of Michigan
+  - family-names: Chung
+    given-names: Dongjun
+    affiliation: The Ohio State University
+    email: chung.911@osu.edu
+references:
+  - type: data
+    title: "Processed data for \"Circular Data Analysis for Spatial Omics\""
+    authors: *authors
+    doi: 10.5281/zenodo.23022287
+    year: 2026
+    publisher:
+      name: Zenodo
+preferred-citation:
+  type: article
+  title: "Circular Data Analysis for Spatial Omics"
+  authors: *authors
+  year: 2026
+  status: in-preparation
