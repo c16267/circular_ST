@@ -1,0 +1,9 @@
+# large inputs are archived at Zenodo (10.5281/zenodo.23022287, concept DOI 10.5281/zenodo.23022286)
+data/
+# outputs created by the scripts
+results_core/
+results/
+# R session files
+.Rhistory
+.RData
+.Rproj.user/
