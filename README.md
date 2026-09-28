@@ -1,11 +1,14 @@
 # circular_ST
 
 [![Data DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23022287.svg)](https://doi.org/10.5281/zenodo.23022287)
+[![Code DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXXX)
 
 Code for **Circular Data Analysis for Spatial Omics** (Shin, Yoo, Cho, et al.).
 The repository reproduces the two case studies in the manuscript and accompanies
-the R examples in the Supplementary Note. The processed data are archived at
-Zenodo ([10.5281/zenodo.23022287](https://doi.org/10.5281/zenodo.23022287)).
+the R examples in the Supplementary Note.
+
+- Data: Zenodo, [10.5281/zenodo.23022287](https://doi.org/10.5281/zenodo.23022287)
+- Code: archived at Zenodo, [10.5281/zenodo.XXXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXXX)
 
 ## Contents
 
@@ -13,6 +16,8 @@ Zenodo ([10.5281/zenodo.23022287](https://doi.org/10.5281/zenodo.23022287)).
 circular_ST/
 ├── supplementary_core_analysis.R   # main analysis script
 ├── simulate_toy_data.R             # optional synthetic inputs with the same columns
+├── CITATION.cff
+├── LICENSE
 └── data/                           # download from Zenodo (not tracked by git)
     ├── DESeq2_region_age_gene_phase_all_genes.csv.gz
     ├── xenium_cell_metadata_with_pathology_and_official_10x_annotation.csv.gz
@@ -86,9 +91,17 @@ the [CRAN archive](https://cran.r-project.org/src/contrib/Archive/CircSpaceTime/
 
 ## Citation
 
-Shin J, Yoo J, Cho Y, et al. Circular Data Analysis for Spatial Omics. Manuscript, 2026.
+If you use this code or data, please cite the manuscript and the archived records.
 
-Data: Shin J, et al. Processed data for "Circular Data Analysis for Spatial Omics".
-Zenodo, 2026. https://doi.org/10.5281/zenodo.23022287
+- Shin J, Yoo J, Cho Y, et al. Circular Data Analysis for Spatial Omics. Manuscript, 2026.
+- Code: Shin J, et al. circular_ST (v1.0.1). Zenodo, 2026. https://doi.org/10.5281/zenodo.XXXXXXXX
+- Data: Shin J, et al. Processed data for "Circular Data Analysis for Spatial Omics". Zenodo, 2026. https://doi.org/10.5281/zenodo.23022287
+
+GitHub also provides a formatted citation under **Cite this repository** (from `CITATION.cff`).
 
 Questions and bug reports: [GitHub issues](https://github.com/c16267/circular_ST/issues).
+
+## License
+
+Code is released under the MIT License (see `LICENSE`). The processed data follow
+the terms stated on the Zenodo record.
