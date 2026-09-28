@@ -6,7 +6,7 @@ abstract: >-
   R code for circular data analysis in spatial omics, reproducing the case
   studies of derived circadian peak phase in a mouse model of Alzheimer's
   disease and latent cell-cycle position in human ovarian cancer.
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-09-28
 license: MIT
 repository-code: "https://github.com/c16267/circular_ST"
