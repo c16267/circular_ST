@@ -1,8 +1,11 @@
 # circular_ST
 
-Code and processed data for **Circular Data Analysis for Spatial Omics**
-(Shin, Yoo, Cho, et al.). The repository reproduces the two case studies in the
-manuscript and accompanies the R examples in the Supplementary Note.
+[![Data DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23022287.svg)](https://doi.org/10.5281/zenodo.23022287)
+
+Code for **Circular Data Analysis for Spatial Omics** (Shin, Yoo, Cho, et al.).
+The repository reproduces the two case studies in the manuscript and accompanies
+the R examples in the Supplementary Note. The processed data are archived at
+Zenodo ([10.5281/zenodo.23022287](https://doi.org/10.5281/zenodo.23022287)).
 
 ## Contents
 
@@ -10,8 +13,8 @@ manuscript and accompanies the R examples in the Supplementary Note.
 circular_ST/
 ├── supplementary_core_analysis.R   # main analysis script
 ├── simulate_toy_data.R             # optional synthetic inputs with the same columns
-└── data/
-    ├── DESeq2_region_age_gene_phase_all_genes.csv
+└── data/                           # download from Zenodo (not tracked by git)
+    ├── DESeq2_region_age_gene_phase_all_genes.csv.gz
     ├── xenium_cell_metadata_with_pathology_and_official_10x_annotation.csv.gz
     └── gp_output/test_with_pred.csv.gz    # archived projected-GP predictions
 ```
@@ -20,10 +23,23 @@ circular_ST/
 
 | File | Dataset | Circular quantity | Main columns |
 |---|---|---|---|
-| `DESeq2_region_age_gene_phase_all_genes.csv` | AD mouse-brain spatial transcriptomics, WT and APP23, 7 and 14 months (Gelber et al., 2026) | Derived circadian peak phase per gene and context (brain region, genotype, age), from DESeq2 harmonic regression | `phase_angle` (radians, ZT0 = 0), `amplitude_log2`, `padj`, `genotype`, `age_months`, `broad_region` |
+| `DESeq2_region_age_gene_phase_all_genes.csv[.gz]` | AD mouse-brain spatial transcriptomics, WT and APP23, 7 and 14 months (Gelber et al., 2026) | Derived circadian peak phase per gene and context (brain region, genotype, age), from DESeq2 harmonic regression | `phase_angle` (radians, ZT0 = 0), `amplitude_log2`, `padj`, `genotype`, `age_months`, `broad_region` |
 | `xenium_cell_metadata_with_pathology_and_official_10x_annotation.csv.gz` | 10x Genomics Xenium Prime FFPE human ovarian cancer | Latent cell-cycle position per cell, inferred by `tricycle` | `tricyclePosition` (radians), `x_centroid`, `y_centroid` (µm), `pathology_region`, `Phase` (Seurat) |
 
-Both files are processed tables. Raw expression matrices are not included.
+Download the files from [Zenodo](https://doi.org/10.5281/zenodo.23022287) into
+`data/`. The script reads either `.csv` or `.csv.gz`. From R:
+
+```r
+base  <- "https://zenodo.org/records/23022287/files/"
+files <- c("DESeq2_region_age_gene_phase_all_genes.csv.gz",
+           "xenium_cell_metadata_with_pathology_and_official_10x_annotation.csv.gz")
+dir.create("data/gp_output", recursive = TRUE, showWarnings = FALSE)
+options(timeout = 3600)   # large files
+for (f in files)
+  download.file(paste0(base, f, "?download=1"), file.path("data", f), mode = "wb")
+download.file(paste0(base, "test_with_pred.csv.gz?download=1"),
+              "data/gp_output/test_with_pred.csv.gz", mode = "wb")   # optional
+```
 
 ## Quick start
 
@@ -71,5 +87,8 @@ the [CRAN archive](https://cran.r-project.org/src/contrib/Archive/CircSpaceTime/
 ## Citation
 
 Shin J, Yoo J, Cho Y, et al. Circular Data Analysis for Spatial Omics. Manuscript, 2026.
+
+Data: Shin J, et al. Processed data for "Circular Data Analysis for Spatial Omics".
+Zenodo, 2026. https://doi.org/10.5281/zenodo.23022287
 
 Questions and bug reports: [GitHub issues](https://github.com/c16267/circular_ST/issues).
