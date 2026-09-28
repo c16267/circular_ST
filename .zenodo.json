@@ -1,0 +1,29 @@
+{
+  "title": "R code for Circular Data Analysis for Spatial Omics (circular_ST)",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit",
+  "description": "R code for the review Circular Data Analysis for Spatial Omics, reproducing the case studies of derived circadian peak phase in a mouse model of Alzheimer's disease and latent cell-cycle position in human ovarian cancer. The processed data and a snapshot of this code are archived at https://doi.org/10.5281/zenodo.23022287.",
+  "keywords": [
+    "circular data analysis",
+    "spatial transcriptomics",
+    "directional statistics",
+    "circadian phase",
+    "cell-cycle position",
+    "R"
+  ],
+  "creators": [
+    {"name": "Shin, Jungmin", "affiliation": "The Ohio State University"},
+    {"name": "Yoo, Jinkyung", "affiliation": "University of Houston"},
+    {"name": "Cho, Yanghyeon", "affiliation": "University of Idaho"},
+    {"name": "Gupta, Arkobrato", "affiliation": "The Ohio State University"},
+    {"name": "Mao, Pin Hsun", "affiliation": "The Ohio State University"},
+    {"name": "Thakkar, Kairavee", "affiliation": "The Ohio State University"},
+    {"name": "Eddy, Tharun Amir", "affiliation": "Intel Corporation"},
+    {"name": "Jung, Kyeong Joo", "affiliation": "Stanford University"},
+    {"name": "Kim, Jee Yeon", "affiliation": "The Ohio State University"},
+    {"name": "Jeon, Hyeongseon", "affiliation": "University of Houston"},
+    {"name": "Xie, Juan", "affiliation": "University of Michigan"},
+    {"name": "Chung, Dongjun", "affiliation": "The Ohio State University"}
+  ]
+}
