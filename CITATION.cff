@@ -1,13 +1,25 @@
 cff-version: 1.2.0
-message: "If you use this code or data, please cite the manuscript below."
+message: "If you use this software, please cite it using the metadata below."
 type: software
-title: "circular_ST: Circular Data Analysis for Spatial Omics"
+title: "R code and processed data for Circular Data Analysis for Spatial Omics"
 abstract: >-
-  R code for circular data analysis in spatial omics, reproducing the case
-  studies of derived circadian peak phase in a mouse model of Alzheimer's
-  disease and latent cell-cycle position in human ovarian cancer.
-version: 1.0.1
+  R code and processed data for circular data analysis in spatial omics,
+  reproducing the case studies of derived circadian peak phase in a mouse
+  model of Alzheimer's disease and latent cell-cycle position in human
+  ovarian cancer. Code and data are archived together at Zenodo.
+version: v1
 date-released: 2026-09-28
+doi: 10.5281/zenodo.23022287
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23022287
+    description: "Version v1, used in the manuscript"
+  - type: doi
+    value: 10.5281/zenodo.23022286
+    description: "All versions, resolving to the latest"
+  - type: url
+    value: "https://zenodo.org/records/23022287"
+    description: "Zenodo record"
 license: MIT
 repository-code: "https://github.com/c16267/circular_ST"
 keywords:
@@ -17,7 +29,7 @@ keywords:
   - circadian phase
   - cell-cycle position
   - R
-authors: &authors
+authors:
   - family-names: Shin
     given-names: Jungmin
     affiliation: The Ohio State University
@@ -55,17 +67,3 @@ authors: &authors
     given-names: Dongjun
     affiliation: The Ohio State University
     email: chung.911@osu.edu
-references:
-  - type: data
-    title: "Processed data for \"Circular Data Analysis for Spatial Omics\""
-    authors: *authors
-    doi: 10.5281/zenodo.23022287
-    year: 2026
-    publisher:
-      name: Zenodo
-preferred-citation:
-  type: article
-  title: "Circular Data Analysis for Spatial Omics"
-  authors: *authors
-  year: 2026
-  status: in-preparation
